@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="form-group">
+    <label>User name</label>
+    <input type="text" class="form-control" [(ngModel)]="username"/>
+  </div>
+
+  <button type="reset" class="btn btn-default" [disabled]="isUsernameEmpty()" (click)="onResetUsername()">Cancel</button>
+
+  <hr>
+  <p>Your chosen username is {{ getUsername() }}</p>
+</div>
+
+
