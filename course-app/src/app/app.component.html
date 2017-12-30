@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header></app-header>
+<app-header (choiceMade)="onChoiceMade($event)"></app-header>
 <hr>
-<app-shopping></app-shopping>
-<hr>
-<app-recipe-book></app-recipe-book>
+<div class="container">
+    <app-shopping *ngIf="shoppingChosen()"></app-shopping>
+    <app-recipe-book *ngIf="recipesChosen()"></app-recipe-book>
+</div>
