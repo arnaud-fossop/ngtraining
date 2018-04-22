@@ -7,15 +7,11 @@ import { RecipesService } from './recipes.service';
   templateUrl: './recipe-item.component.html'
 })
 export class RecipeItemComponent implements OnInit {
+  @Input() recipeIndex:number
   @Input() recipe:Recipe;
-  @Output() itemSelected = new EventEmitter<void>();
 
   constructor(private recipesService:RecipesService) { }
 
   ngOnInit() {
-  }
-
-  onItemSelected() {
-    this.recipesService.recipeSelected.emit(this.recipe);
   }
 }

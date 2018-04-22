@@ -12,8 +12,10 @@ import { RecipeBookComponent } from './recipe-book/recipe-book.component';
 import { RecipeListComponent } from './recipe-book/recipe-list.component';
 import { RecipeItemComponent } from './recipe-book/recipe-item.component';
 import { RecipeDetailComponent } from './recipe-book/recipe-detail.component';
+import { RecipeDetailInfoTextComponent } from './recipe-book/recipe-detail-info-text.component';
 import { DropdownDirective } from './shared/dropdown.directive';
-
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeEditComponent } from './recipe-book/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,14 @@ import { DropdownDirective } from './shared/dropdown.directive';
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
-    DropdownDirective
+    RecipeDetailInfoTextComponent,
+    DropdownDirective,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

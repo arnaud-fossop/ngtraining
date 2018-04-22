@@ -41,6 +41,10 @@ export class RecipesService {
         return this.recipes[this.selectedRecipeId];
     }
 
+    getRecipe(id:number) {
+        return this.recipes[id];
+    }
+
     addIngredientsToShoppingList(recipe: Recipe) {
         this.shoppingService.addIngredients(recipe.ingredients);
     }

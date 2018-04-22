@@ -11,17 +11,17 @@ import { ShoppingService } from './shopping/shopping.service';
 })
 export class AppComponent {
   title = 'app';
-  choice: MenuChoice = MenuChoice.SHOPPING;
+  // choice: MenuChoice = MenuChoice.SHOPPING;
 
-  onChoiceMade(choice : MenuChoice) {
-    this.choice = choice;
-  }
+  // onChoiceMade(choice : MenuChoice) {
+  //   this.choice = choice;
+  // }
 
-  shoppingChosen() {
-    return this.choice == MenuChoice.SHOPPING;
-  }
+  // shoppingChosen() {
+  //   return this.choice == MenuChoice.SHOPPING;
+  // }
 
-  recipesChosen() {
-    return this.choice == MenuChoice.RECIPES;
-  }
+  // recipesChosen() {
+  //   return this.choice == MenuChoice.RECIPES;
+  // }
 }
